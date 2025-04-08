@@ -1,0 +1,83 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+}
+
+.logo p {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.droite {
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+    align-items: center;
+}
+
+.hvr {
+    color: black;
+    margin: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.hvr:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 183, 0);
+    text-decoration-thickness: 4px;
+    text-underline-offset: 6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#profil-toggle {
+    display: none;
+}
+
+
+.menu-profil {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 150px;
+    right: 40px;
+    z-index: 10;
+}
+
+.menu-profil a {
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+
+#profil-toggle:checked + .profil-label + .menu-profil {
+    display: flex;
+}
+
+.deco{
+    color: red;
+}
+
+.loupe{
+    width: 25px;
+}
+
+.panier{
+    width: 25px;
+}
+
+.pdp{
+    width: 25px ;
+}
