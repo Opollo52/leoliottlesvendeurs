@@ -1,4 +1,5 @@
 <?php
+
     session_start();
     require('includes/database.php');
 
@@ -19,6 +20,7 @@
         <a href="pages/logout.php">Déconnexion</a>
         <a href="pages/editUser.php?user_id=<?= $connectedUserId ?>">Modifier</a>
         <p>Connecté en tant que <?= htmlspecialchars($_SESSION['user']['username']) ?></p>
+        <?php include 'includes/header.php'; ?>
     <?php else: ?>
         <a href="pages/login.php">Connexion</a>
     <?php endif; ?>
