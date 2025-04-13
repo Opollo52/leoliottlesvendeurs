@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 'username' => $user['username'],
                 'email' => $user['email']
             ];
-            header('Location: ../index.php');
+            header('Location: home.php');
             exit();
         } else {
             $error = "Identifiants incorrects.";
@@ -34,18 +34,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 <body>
-    <form method="POST">
-        <label>Email :</label>
-        <input type="email" name="email" required>
-
-        <label>Mot de passe :</label>
-        <input type="password" name="password" required>
-
-        <button type="submit">Se connecter</button>
-
+    <?php include '../includes/header.php'; ?>
+    <h1>Connectez-vous</h1>
+    <form class="form" method="POST" action="login.php">
+        <span class="input-span">
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email"/>
+        </span>
+        <span class="input-span">
+            <label for="password" class="label">Mot de passe</label>
+            <input type="password" name="password" id="password"/>
+        </span>
+        <span class="span">
+            <a href="#">Mot de passe oublier ?</a>
+        </span>
+        <input class="submit" type="submit" value="Se connecter" />
+        <span class="span">
+            Pas encore de compte ? <a href="register.php">Créer un compte</a>
+        </span>
         <?php if(isset($error)) echo "<p>$error</p>"; ?>
     </form>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>

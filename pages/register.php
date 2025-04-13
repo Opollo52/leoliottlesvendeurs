@@ -31,21 +31,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>register</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
 </head>
 <body>
-    <form method="POST">
-        <label>Pseudo :</label>
-        <input type="text" name="username" required>
-
-        <label>Email :</label>
-        <input type="email" name="email" required>
-
-        <label>Mot de passe :</label>
-        <input type="password" name="password" required>
-
-        <button type="submit">Créer mon compte</button>
-
+    <?php include '../includes/header.php'; ?>
+    <h1>Créer un compte</h1>
+    <form class="form" method="POST" action="register.php">
+        <span class="input-span">
+            <label for="username" class="label">Pseudo</label>
+            <input type="text" name="username" id="username"/>
+        </span>
+        <span class="input-span">
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email"/>
+        </span>
+        <span class="input-span">
+            <label for="password" class="label">Mot de passe</label>
+            <input type="password" name="password" id="password"/>
+        </span>
+        <input class="submit" type="submit" value="Créer un compte" />
+        <span class="span">
+            Déjà un compte ? <a href="login.php">Se connecter</a>
+        </span>
         <?php if(isset($error)) echo "<p>$error</p>"; ?>
     </form>
+    <?php include '../includes/footer.php'; ?>
 </body>
 </html>
