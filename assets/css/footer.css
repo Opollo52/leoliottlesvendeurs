@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
   footer {
     background-color: grey;
     color: #f0f0f0;
     padding: 40px 0px 20px;
+    box-sizing: border-box;
   }
   
   .footer-container {
