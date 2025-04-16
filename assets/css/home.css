@@ -1,0 +1,144 @@
+/* HERO BANNER */
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+}
+
+.hero-buttons a {
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 1em;
+    transition: background-color 0.3s;
+}
+
+.watch-btn {
+    background-color: white;
+    color: black;
+}
+
+.download-btn {
+    background-color: black;
+    color: white;
+}
+
+.watch-btn:hover {
+    background-color: #e5e5e5;
+}
+
+.download-btn:hover {
+    background-color: #333;
+}
+
+.section-title{
+    font-size: 70px;
+}
+
+/* FILM GRID SCROLLABLE */
+.film-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 1rem;
+    justify-content: center;
+}
+
+
+
+.section-title {
+    font-size: 2.5rem;
+    margin-top: 4rem; /* Ajoute de l'espace au-dessus */
+    margin-bottom: 1rem;
+}
+
+
+/* FILM CARD */
+.film-card {
+    width: 200px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.film-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.film-info {
+    margin-top: 10px;
+}
+
+.film-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.film-info p {
+    color: #ffd700;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.film-card form {
+    margin-top: 10px;
+}
+
+.film-card input[type="number"] {
+    width: 50px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #888;
+    margin-right: 5px;
+}
+
+.film-card button {
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.film-card button:hover {
+    background-color: #ddd;
+}
