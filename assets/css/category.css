@@ -115,9 +115,7 @@ body {
     cursor: pointer;
 }
 
-.film-card:hover {
-    transform: scale(1.05);
-}
+
 
 .film-img {
     width: 100%;

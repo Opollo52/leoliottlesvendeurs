@@ -1,0 +1,63 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.search-container {
+    padding: 40px 60px;
+}
+
+.search-container h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.film-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.film-card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.film-card:hover {
+    transform: scale(1.02);
+}
+
+.film-img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    border-bottom: 1px solid #333;
+}
+
+.film-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.film-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: white;
+}
+
+.film-info p {
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.no-result {
+    color: #aaa;
+    font-style: italic;
+    margin-top: 30px;
+}
